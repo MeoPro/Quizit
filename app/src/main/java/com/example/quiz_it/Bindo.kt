@@ -16,7 +16,7 @@ import com.example.quiz_it.databinding.ActivityBindoBinding
 
 class  Bindo: AppCompatActivity(), View.OnClickListener{
     private var mCurrentPosition: Int = 1
-    private var mQuestionsList: ArrayList<QuestionsF>? = null
+    private var mQuestionsList: ArrayList<QuestionB>? = null
     private var mSelectedOptionPosition : Int = 0
     private var mCorrectAnswers : Int = 0
 
@@ -27,15 +27,15 @@ class  Bindo: AppCompatActivity(), View.OnClickListener{
         binding = ActivityBindoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        mQuestionsList = Constants.getQuestions()
+        mQuestionsList = ConstanB.getQuestions()
 
         setQuestion()
 
-        binding.tvOptionOneb.setOnClickListener(this)
-        binding.tvOptionTwob.setOnClickListener(this)
-        binding.tvOptionThreeb.setOnClickListener(this)
-        binding.tvOptionFourb.setOnClickListener(this)
-        binding.btnSubmitb.setOnClickListener(this)
+        binding.tvOptionOnebi.setOnClickListener(this)
+        binding.tvOptionTwobi.setOnClickListener(this)
+        binding.tvOptionThreebi.setOnClickListener(this)
+        binding.tvOptionFourbi.setOnClickListener(this)
+        binding.btnSubmitbi.setOnClickListener(this)
     }
 
     private fun setQuestion(){
@@ -45,27 +45,27 @@ class  Bindo: AppCompatActivity(), View.OnClickListener{
         deafultOptionsView()
 
         if (mCurrentPosition == mQuestionsList!!.size){
-            binding.btnSubmitb.text = "FINISH"
+            binding.btnSubmitbi.text = "FINISH"
         }else{
-            binding.btnSubmitb.text = "SUBMIT"
+            binding.btnSubmitbi.text = "SUBMIT"
         }
 
-        binding.progressBarb.progress = mCurrentPosition
-        binding.tvProgress.text = "$mCurrentPosition" + "/" + binding.progressBarb.max
+        binding.progressBarbi.progress = mCurrentPosition
+        binding.tvProgressbi.text = "$mCurrentPosition" + "/" + binding.progressBarbi.max
 
-        binding.tvQuestionb.text= question!!.question
-        binding.tvOptionOneb.text = question.optionOne
-        binding.tvOptionTwob.text = question.optionTwo
-        binding.tvOptionThreeb.text = question.optionThree
-        binding.tvOptionFourb.text = question.optionFour
+        binding.tvQuestionbi.text= question!!.questionb
+        binding.tvOptionOnebi.text = question.optionOneb
+        binding.tvOptionTwobi.text = question.optionTwob
+        binding.tvOptionThreebi.text = question.optionThreeb
+        binding.tvOptionFourbi.text = question.optionFourb
     }
 
     private fun deafultOptionsView(){
         val options = ArrayList<TextView>()
-        options.add( 0, binding.tvOptionOneb)
-        options.add( 1, binding.tvOptionTwob)
-        options.add( 2, binding.tvOptionThreeb)
-        options.add( 3, binding.tvOptionFourb)
+        options.add( 0, binding.tvOptionOnebi)
+        options.add( 1, binding.tvOptionTwobi)
+        options.add( 2, binding.tvOptionThreebi)
+        options.add( 3, binding.tvOptionFourbi)
 
         for (option in options){
             option.setTextColor(Color.parseColor("#7A8089"))
@@ -76,19 +76,19 @@ class  Bindo: AppCompatActivity(), View.OnClickListener{
 
     override fun onClick(p0: View?) {
         when(p0?.id){
-            binding.tvOptionOneb.id ->{
-                SelectedOptionView(binding.tvOptionOneb, 1)
+            binding.tvOptionOnebi.id ->{
+                SelectedOptionView(binding.tvOptionOnebi, 1)
             }
-            binding.tvOptionTwob.id ->{
-                SelectedOptionView(binding.tvOptionTwob, 2)
+            binding.tvOptionTwobi.id ->{
+                SelectedOptionView(binding.tvOptionTwobi, 2)
             }
-            binding.tvOptionThreeb.id ->{
-                SelectedOptionView(binding.tvOptionThreeb, 3)
+            binding.tvOptionThreebi.id ->{
+                SelectedOptionView(binding.tvOptionThreebi, 3)
             }
-            binding.tvOptionFourb.id ->{
-                SelectedOptionView(binding.tvOptionFourb, 4)
+            binding.tvOptionFourbi.id ->{
+                SelectedOptionView(binding.tvOptionFourbi, 4)
             }
-            binding.btnSubmitb.id ->{
+            binding.btnSubmitbi.id ->{
 
                 if (mSelectedOptionPosition == 0){
                     mCurrentPosition ++
@@ -105,15 +105,15 @@ class  Bindo: AppCompatActivity(), View.OnClickListener{
                     }
                 }else{
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
-                    if(question!!.correctAnswer != mSelectedOptionPosition){
+                    if(question!!.correctAnswerb != mSelectedOptionPosition){
                         AnswerView(mSelectedOptionPosition, com.example.quiz_it.R.drawable.wrong_option_border_bg)
                     }else{
                         mCorrectAnswers++
                     }
-                    AnswerView(question.correctAnswer, com.example.quiz_it.R.drawable.correct_option_border_bg)
+                    AnswerView(question.correctAnswerb, com.example.quiz_it.R.drawable.correct_option_border_bg)
 
                     if(mCurrentPosition == mQuestionsList!!.size){
-                        binding.btnSubmitb.text = "FINISH"
+                        binding.btnSubmitbi.text = "FINISH"
                     }
                     mSelectedOptionPosition = 0
                 }
@@ -124,16 +124,16 @@ class  Bindo: AppCompatActivity(), View.OnClickListener{
     private fun AnswerView(answer: Int, drawableView: Int){
         when(answer){
             1 ->{
-                binding.tvOptionOneb.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionOnebi.background = ContextCompat.getDrawable(this,drawableView)
             }
             2 ->{
-                binding.tvOptionTwob.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionTwobi.background = ContextCompat.getDrawable(this,drawableView)
             }
             3 ->{
-                binding.tvOptionThreeb.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionThreebi.background = ContextCompat.getDrawable(this,drawableView)
             }
             4 ->{
-                binding.tvOptionFourb.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionFourbi.background = ContextCompat.getDrawable(this,drawableView)
             }
         }
     }

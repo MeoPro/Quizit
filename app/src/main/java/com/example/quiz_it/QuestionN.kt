@@ -1,7 +1,7 @@
 package com.example.quiz_it
 
 data class QuestionN (
-    val idb: Int,
+    val idn: Int,
     val questionn: String,
     val optionOnen: String,
     val optionTwon: String,

@@ -12,6 +12,7 @@
         <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_score.xml" value="0.20742753623188406" />
         <entry key="app/src/main/res/drawable/correct_option_border_bg.xml" value="0.262" />
         <entry key="app/src/main/res/layout/activity_bendera.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_binatang.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_bindo.xml" value="0.115625" />
         <entry key="app/src/main/res/layout/activity_category.xml" value="0.27158966064453127" />
         <entry key="app/src/main/res/layout/activity_ipa.xml" value="0.115625" />
@@ -25,7 +26,12 @@
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_result_flag.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_result_bi.xml" value="0.115625" />
+        <entry key="app/src/main/res/layout/activity_result_binatang.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_result_flag.xml" value="0.24449527021767437" />
+        <entry key="app/src/main/res/layout/activity_result_i.xml" value="0.115625" />
+        <entry key="app/src/main/res/layout/activity_result_m.xml" value="0.115625" />
+        <entry key="app/src/main/res/layout/activity_result_p.xml" value="0.10902862548828124" />
         <entry key="app/src/main/res/layout/activity_score.xml" value="0.115625" />
       </map>
     </option>

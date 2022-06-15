@@ -21,7 +21,7 @@ object Constants {
             R.drawable.ic_flag_of_belgium,
             "Brazil",
             "Belgium",
-            "Germany",
+            "Korea",
             "India",
             2
         )
@@ -31,7 +31,7 @@ object Constants {
         val que3= QuestionsF(3,"Ini Merupakan Bendera Dari Negara Apa?",
             R.drawable.ic_flag_of_australia,
             "Australia",
-            "Belgium",
+            "Malaysia",
             "Austria",
             "Brazil",
             1
@@ -76,7 +76,7 @@ object Constants {
             R.drawable.ic_flag_of_fiji,
             "Fiji",
             "New Zealand",
-            "Australia",
+            "Jepang",
             "Romania",
             1
         )
@@ -108,9 +108,9 @@ object Constants {
         val que10= QuestionsF(10,"Ini Merupakan Bendera Dari Negara Apa?",
             R.drawable.ic_flag_of_germany,
             "France",
-            "Belgium",
+            "Arab",
             "Germany",
-            "Romania",
+            "China",
             3
         )
 

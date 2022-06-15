@@ -6,102 +6,102 @@ object ConstanB {
     fun getQuestions(): ArrayList<QuestionB>{
         val questionsList = ArrayList<QuestionB>()
 
-        val que1= QuestionB(1,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Argentina",
-            "Belgium",
-            "Australia",
-            "Romania",
+        val que1= QuestionB(1,"Manakah sinonim yang benar Acum?",
+            "Hasut",
+            "Ceramah",
+            "Marah",
+            "Apresiasi",
             1
         )
 
         questionsList.add(que1)
 
-        val que2= QuestionB(2,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Brazil",
-            "Belgium",
-            "Germany",
-            "India",
-            2
+        val que2= QuestionB(2,"Sinonim Melatis adalah?",
+            "Melawan",
+            "Melompat",
+            "Menerobos",
+            "Memarahi",
+            3
         )
 
         questionsList.add(que2)
 
-        val que3= QuestionB(3,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Australia",
-            "Belgium",
-            "Austria",
-            "Brazil",
-            1
+        val que3= QuestionB(3,"Sinonim getol adalah?",
+            "Menumpang",
+            "Gatal",
+            "Nakal",
+            "Gemar",
+            4
         )
 
         questionsList.add(que3)
 
-        val que4= QuestionB(4,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Somalia",
-            "Africa",
-            "India",
-            "Kuwait",
-            4
+        val que4= QuestionB(4,"Sinonim dari Genjah adalah?",
+            "Cepat besar",
+            "Jatuh",
+            "Cepat berubah",
+            "Sangat hebat",
+            3
         )
 
         questionsList.add(que4)
 
-        val que5= QuestionB(5,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Argentina",
-            "Brazil",
-            "Australia",
-            "Indonesia",
-            2
+        val que5= QuestionB(5,"Sinonim dari jemawa adalah?",
+            "Angkuh",
+            "Jahat",
+            "Berkelahi",
+            "Melawan",
+            1
         )
 
         questionsList.add(que5)
 
-        val que6= QuestionB(6,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Austria",
-            "Belgium",
-            "England",
-            "Denmark",
-            4
+        val que6= QuestionB(6,"Antonim dari Elastis?",
+            "Lembut",
+            "Empuk",
+            "Kaku",
+            "Pendek",
+            3
         )
 
         questionsList.add(que6)
 
-        val que7= QuestionB(7,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Fiji",
-            "New Zealand",
-            "Australia",
-            "Romania",
-            1
+        val que7= QuestionB(7,"Antonim dari Gratis?",
+            "Memberi",
+            "Dibayar",
+            "Berbayar",
+            "Membayar",
+            3
         )
 
         questionsList.add(que7)
 
-        val que8= QuestionB(8,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Somalia",
-            "India",
-            "Wales",
-            "Romania",
+        val que8= QuestionB(8,"Antonim dari Indetik?",
+            "Sama",
+            "Berbeda",
+            "Mirip",
+            "Identitas",
             2
         )
 
         questionsList.add(que8)
 
-        val que9= QuestionB(9,"Ini Merupakan Bendera Dari Negara Apa?",
-            "Finland",
-            "Belgium",
-            "New Zealand",
-            "America",
+        val que9= QuestionB(9,"Antonim dari kacau?",
+            "Berantakan",
+            "Kotor",
+            "Teratur",
+            "Bersih",
             3
         )
 
         questionsList.add(que9)
 
-        val que10= QuestionB(10,"Ini Merupakan Bendera Dari Negara Apa?",
-            "France",
-            "Belgium",
-            "Germany",
-            "Romania",
-            3
+        val que10= QuestionB(10,"Antonim dari kasar adalah?",
+            "Berat",
+            "Ringan",
+            "Lancar",
+            "Halus",
+            4
         )
 
         questionsList.add(que10)

@@ -11,31 +11,31 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.quiz_it.databinding.ActivityIpaBinding
+import com.example.quiz_it.databinding.ActivityBinatangBinding
 
 
-class  Ipa: AppCompatActivity(), View.OnClickListener{
+class  Binatang: AppCompatActivity(), View.OnClickListener{
     private var mCurrentPosition: Int = 1
-    private var mQuestionsList: ArrayList<QuestionI>? = null
+    private var mQuestionsList: ArrayList<QuestionN>? = null
     private var mSelectedOptionPosition : Int = 0
     private var mCorrectAnswers : Int = 0
 
-    private lateinit var binding: ActivityIpaBinding
+    private lateinit var binding: ActivityBinatangBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         supportActionBar?.hide()
         super.onCreate(savedInstanceState)
-        binding = ActivityIpaBinding.inflate(layoutInflater)
+        binding = ActivityBinatangBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        mQuestionsList = ConstansI.getQuestions()
+        mQuestionsList = ConstanN.getQuestions()
 
         setQuestion()
 
-        binding.tvOptionOnei.setOnClickListener(this)
-        binding.tvOptionTwoi.setOnClickListener(this)
-        binding.tvOptionThreei.setOnClickListener(this)
-        binding.tvOptionFouri.setOnClickListener(this)
-        binding.btnSubmiti.setOnClickListener(this)
+        binding.tvOptionOnen.setOnClickListener(this)
+        binding.tvOptionTwon.setOnClickListener(this)
+        binding.tvOptionThreen.setOnClickListener(this)
+        binding.tvOptionFourn.setOnClickListener(this)
+        binding.btnSubmitn.setOnClickListener(this)
     }
 
     private fun setQuestion(){
@@ -45,27 +45,27 @@ class  Ipa: AppCompatActivity(), View.OnClickListener{
         deafultOptionsView()
 
         if (mCurrentPosition == mQuestionsList!!.size){
-            binding.btnSubmiti.text = "FINISH"
+            binding.btnSubmitn.text = "FINISH"
         }else{
-            binding.btnSubmiti.text = "SUBMIT"
+            binding.btnSubmitn.text = "SUBMIT"
         }
 
-        binding.progressBari.progress = mCurrentPosition
-        binding.tvProgressi.text = "$mCurrentPosition" + "/" + binding.progressBari.max
+        binding.progressBarn.progress = mCurrentPosition
+        binding.tvProgressn.text = "$mCurrentPosition" + "/" + binding.progressBarn.max
 
-        binding.tvQuestioni.text= question!!.questioni
-        binding.tvOptionOnei.text = question.optionOnei
-        binding.tvOptionTwoi.text = question.optionTwoi
-        binding.tvOptionThreei.text = question.optionThreei
-        binding.tvOptionFouri.text = question.optionFouri
+        binding.tvQuestionn.text= question!!.questionn
+        binding.tvOptionOnen.text = question.optionOnen
+        binding.tvOptionTwon.text = question.optionTwon
+        binding.tvOptionThreen.text = question.optionThreen
+        binding.tvOptionFourn.text = question.optionFourn
     }
 
     private fun deafultOptionsView(){
         val options = ArrayList<TextView>()
-        options.add( 0, binding.tvOptionOnei)
-        options.add( 1, binding.tvOptionTwoi)
-        options.add( 2, binding.tvOptionThreei)
-        options.add( 3, binding.tvOptionFouri)
+        options.add( 0, binding.tvOptionOnen)
+        options.add( 1, binding.tvOptionTwon)
+        options.add( 2, binding.tvOptionThreen)
+        options.add( 3, binding.tvOptionFourn)
 
         for (option in options){
             option.setTextColor(Color.parseColor("#7A8089"))
@@ -76,19 +76,19 @@ class  Ipa: AppCompatActivity(), View.OnClickListener{
 
     override fun onClick(p0: View?) {
         when(p0?.id){
-            binding.tvOptionOnei.id ->{
-                SelectedOptionView(binding.tvOptionOnei, 1)
+            binding.tvOptionOnen.id ->{
+                SelectedOptionView(binding.tvOptionOnen, 1)
             }
-            binding.tvOptionTwoi.id ->{
-                SelectedOptionView(binding.tvOptionTwoi, 2)
+            binding.tvOptionTwon.id ->{
+                SelectedOptionView(binding.tvOptionTwon, 2)
             }
-            binding.tvOptionThreei.id ->{
-                SelectedOptionView(binding.tvOptionThreei, 3)
+            binding.tvOptionThreen.id ->{
+                SelectedOptionView(binding.tvOptionThreen, 3)
             }
-            binding.tvOptionFouri.id ->{
-                SelectedOptionView(binding.tvOptionFouri, 4)
+            binding.tvOptionFourn.id ->{
+                SelectedOptionView(binding.tvOptionFourn, 4)
             }
-            binding.btnSubmiti.id ->{
+            binding.btnSubmitn.id ->{
 
                 if (mSelectedOptionPosition == 0){
                     mCurrentPosition ++
@@ -98,22 +98,22 @@ class  Ipa: AppCompatActivity(), View.OnClickListener{
                             setQuestion()
                         }else->{
                         val intent = Intent(this, ResultFlag::class.java)
-                        intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-                        intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
+                        intent.putExtra(ConstanB.CORRECT_ANSWERS, mCorrectAnswers)
+                        intent.putExtra(ConstanB.TOTAL_QUESTIONS, mQuestionsList!!.size)
                         startActivity(intent)
                     }
                     }
                 }else{
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
-                    if(question!!.correctAnsweri != mSelectedOptionPosition){
+                    if(question!!.correctAnswern != mSelectedOptionPosition){
                         AnswerView(mSelectedOptionPosition, com.example.quiz_it.R.drawable.wrong_option_border_bg)
                     }else{
                         mCorrectAnswers++
                     }
-                    AnswerView(question.correctAnsweri, com.example.quiz_it.R.drawable.correct_option_border_bg)
+                    AnswerView(question.correctAnswern, com.example.quiz_it.R.drawable.correct_option_border_bg)
 
                     if(mCurrentPosition == mQuestionsList!!.size){
-                        binding.btnSubmiti.text = "FINISH"
+                        binding.btnSubmitn.text = "FINISH"
                     }
                     mSelectedOptionPosition = 0
                 }
@@ -124,16 +124,16 @@ class  Ipa: AppCompatActivity(), View.OnClickListener{
     private fun AnswerView(answer: Int, drawableView: Int){
         when(answer){
             1 ->{
-                binding.tvOptionOnei.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionOnen.background = ContextCompat.getDrawable(this,drawableView)
             }
             2 ->{
-                binding.tvOptionTwoi.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionTwon.background = ContextCompat.getDrawable(this,drawableView)
             }
             3 ->{
-                binding.tvOptionThreei.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionThreen.background = ContextCompat.getDrawable(this,drawableView)
             }
             4 ->{
-                binding.tvOptionFouri.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionFourn.background = ContextCompat.getDrawable(this,drawableView)
             }
         }
     }

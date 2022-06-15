@@ -16,7 +16,7 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tv_questionb"
+            android:id="@+id/tv_questionbi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -27,13 +27,13 @@
         </TextView>
 
         <LinearLayout
-            android:id="@+id/ll_progress_detailsb"
+            android:id="@+id/ll_progress_detailsbi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <ProgressBar
-                android:id="@+id/progressBarb"
+                android:id="@+id/progressBarbi"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 android:indeterminate="false">
             </ProgressBar>
             <TextView
-                android:id="@+id/tv_progress"
+                android:id="@+id/tv_progressbi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -55,7 +55,7 @@
             </TextView>
         </LinearLayout>
         <TextView
-            android:id="@+id/tv_option_oneb"
+            android:id="@+id/tv_option_onebi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -67,7 +67,7 @@
             tools:text="Apple">
         </TextView>
         <TextView
-            android:id="@+id/tv_option_twob"
+            android:id="@+id/tv_option_twobi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -79,7 +79,7 @@
             tools:text="Apple">
         </TextView>
         <TextView
-            android:id="@+id/tv_option_threeb"
+            android:id="@+id/tv_option_threebi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -91,7 +91,7 @@
             tools:text="Apple">
         </TextView>
         <TextView
-            android:id="@+id/tv_option_fourb"
+            android:id="@+id/tv_option_fourbi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -103,7 +103,7 @@
             tools:text="Apple">
         </TextView>
         <Button
-            android:id="@+id/btn_submitb"
+            android:id="@+id/btn_submitbi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

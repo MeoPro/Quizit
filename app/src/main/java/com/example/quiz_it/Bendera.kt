@@ -46,6 +46,7 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
 
         if (mCurrentPosition == mQuestionsList!!.size){
             binding.btnSubmit.text = "FINISH"
+
         }else{
             binding.btnSubmit.text = "SUBMIT"
         }
@@ -90,14 +91,14 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
                 SelectedOptionView(binding.tvOptionFour, 4)
             }
             binding.btnSubmit.id ->{
-
                 if (mSelectedOptionPosition == 0){
-                    mCurrentPosition ++
+
 
                     when{
                         mCurrentPosition <= mQuestionsList!!.size ->{
                             setQuestion()
                         }else->{
+
                         val intent = Intent(this, ResultFlag::class.java)
                         intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
                         intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
@@ -115,10 +116,14 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmit.text = "FINISH"
+
+                    }else {
+                        binding.btnSubmit.text = "GO TO NEXT QUESTION"
                     }
                     mSelectedOptionPosition = 0
                 }
             }
+
         }
     }
 

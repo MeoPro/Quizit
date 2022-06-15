@@ -19,5 +19,10 @@ class pengetahuankategori : AppCompatActivity() {
             startActivity(intent)
         }
         )
+        binding.binatang.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@pengetahuankategori, Binatang::class.java)
+            startActivity(intent)
+        }
+        )
     }
 }

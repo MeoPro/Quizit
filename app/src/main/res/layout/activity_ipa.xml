@@ -16,7 +16,7 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/tv_question"
+            android:id="@+id/tv_questioni"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -27,13 +27,13 @@
         </TextView>
 
         <LinearLayout
-            android:id="@+id/ll_progress_details"
+            android:id="@+id/ll_progress_detailsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
             <ProgressBar
-                android:id="@+id/progressBar"
+                android:id="@+id/progressBari"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 android:indeterminate="false">
             </ProgressBar>
             <TextView
-                android:id="@+id/tv_progress"
+                android:id="@+id/tv_progressi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -55,7 +55,7 @@
             </TextView>
         </LinearLayout>
         <TextView
-            android:id="@+id/tv_option_one"
+            android:id="@+id/tv_option_onei"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -67,7 +67,7 @@
             tools:text="Apple">
         </TextView>
         <TextView
-            android:id="@+id/tv_option_two"
+            android:id="@+id/tv_option_twoi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -79,7 +79,7 @@
             tools:text="Apple">
         </TextView>
         <TextView
-            android:id="@+id/tv_option_three"
+            android:id="@+id/tv_option_threei"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -91,7 +91,7 @@
             tools:text="Apple">
         </TextView>
         <TextView
-            android:id="@+id/tv_option_four"
+            android:id="@+id/tv_option_fouri"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -103,7 +103,7 @@
             tools:text="Apple">
         </TextView>
         <Button
-            android:id="@+id/btn_submit"
+            android:id="@+id/btn_submiti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

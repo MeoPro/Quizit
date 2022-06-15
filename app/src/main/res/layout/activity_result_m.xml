@@ -7,7 +7,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".ResultFlag">
+    tools:context=".ResultM">
 
     <TextView
         android:id="@+id/tv_result"
@@ -54,11 +54,5 @@
         android:textColor="@android:color/black"
         android:textSize="20sp"
         tools:text="Your Score is 9 out of 10" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Done" />
 
 </LinearLayout>
