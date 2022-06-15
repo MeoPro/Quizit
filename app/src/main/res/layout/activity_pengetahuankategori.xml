@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="NEGARA"
+        android:background="@drawable/wallpaper"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/bendera"

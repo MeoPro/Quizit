@@ -6,7 +6,13 @@ object Constants {
     fun getQuestions(): ArrayList<QuestionsF>{
         val questionsList = ArrayList<QuestionsF>()
 
-        val que1= QuestionsF(
+        val que1= QuestionsF(1,"Ini Merupakan Bendera Dari Negara Apa?",
+            R.drawable.ic_flag_of_argentina,
+            "Argentina",
+            "Belgium",
+            "Australia",
+            "Romania",
+            1
         )
 
         questionsList.add(que1)
@@ -114,5 +120,4 @@ object Constants {
 
     }
 
-}
 }

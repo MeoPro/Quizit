@@ -12,6 +12,7 @@ class pengetahuankategori : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPengetahuankategoriBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         binding.bendera.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@pengetahuankategori, Bendera::class.java)

@@ -14,6 +14,7 @@ class Pilihan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPilihanBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
 
         binding.imageView2.setOnClickListener(View.OnClickListener {

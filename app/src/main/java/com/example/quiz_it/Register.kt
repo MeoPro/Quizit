@@ -8,15 +8,12 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.core.widget.addTextChangedListener
-<<<<<<< HEAD
 import kotlinx.android.synthetic.main.activity_register.*
-=======
 import com.example.quiz_it.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
->>>>>>> 780f547ebb74339bd87ad638b4c1a5ee8b7b0d0d
 import java.util.ArrayList
 
 class Register : AppCompatActivity() {
@@ -28,6 +25,7 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         database = FirebaseDatabase.getInstance()
         reference = database.getReference("email")
         firebaseAuth = FirebaseAuth.getInstance()

@@ -16,6 +16,7 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
 
         binding.Registerbutton.setOnClickListener(View.OnClickListener {

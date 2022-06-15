@@ -10,6 +10,7 @@ class Category : AppCompatActivity() {
     private lateinit var binding: ActivityCategoryBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         binding = ActivityCategoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

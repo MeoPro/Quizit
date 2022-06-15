@@ -98,7 +98,7 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
                         mCurrentPosition <= mQuestionsList!!.size ->{
                             setQuestion()
                         }else->{
-                        val intent = Intent(this, ResultActivity::class.java)
+                        val intent = Intent(this, ResultFlag::class.java)
                         intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
                         intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
                         startActivity(intent)
