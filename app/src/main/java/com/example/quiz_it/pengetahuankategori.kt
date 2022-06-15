@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.quiz_it.Pengetahuan.Bendera
 import com.example.quiz_it.databinding.ActivityPengetahuankategoriBinding
 
 class pengetahuankategori : AppCompatActivity() {
