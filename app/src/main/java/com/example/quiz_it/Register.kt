@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
-import com.example.quiz_it.UserStorage
-import com.example.quiz_it.objects.UserStorage.create_acc
 import kotlinx.android.synthetic.main.activity_register.*
 import java.util.ArrayList
 
