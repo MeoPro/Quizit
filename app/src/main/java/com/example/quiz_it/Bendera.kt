@@ -16,7 +16,7 @@ import com.example.quiz_it.databinding.ActivityBenderaBinding
 
 class  Bendera: AppCompatActivity(), View.OnClickListener{
     private var mCurrentPosition: Int = 1
-    private var mQuestionsList: ArrayList<Questions>? = null
+    private var mQuestionsList: ArrayList<QuestionsF>? = null
     private var mSelectedOptionPosition : Int = 0
     private var mCorrectAnswers : Int = 0
 
@@ -71,7 +71,7 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
         for (option in options){
             option.setTextColor(Color.parseColor("#7A8089"))
             option.typeface = Typeface.DEFAULT
-            option.background=ContextCompat.getDrawable(this, com.example.quizapp.R.drawable.default_option_border_bg)
+            option.background=ContextCompat.getDrawable(this, com.example.quiz_it.R.drawable.default_option_border_bg)
         }
     }
 
@@ -107,11 +107,11 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
                 }else{
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
                     if(question!!.correctAnswer != mSelectedOptionPosition){
-                        AnswerView(mSelectedOptionPosition, com.example.quizapp.R.drawable.wrong_option_border_bg)
+                        AnswerView(mSelectedOptionPosition, com.example.quiz_it.R.drawable.wrong_option_border_bg)
                     }else{
                         mCorrectAnswers++
                     }
-                    AnswerView(question.correctAnswer, com.example.quizapp.R.drawable.correct_option_border_bg)
+                    AnswerView(question.correctAnswer, com.example.quiz_it.R.drawable.correct_option_border_bg)
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmit.text = "FINISH"
@@ -125,16 +125,16 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
     private fun AnswerView(answer: Int, drawableView: Int){
         when(answer){
             1 ->{
-                binding.tvOptionOne.background = ContextCompat.getDrawable(this@QuizQuestionsActivity,drawableView)
+                binding.tvOptionOne.background = ContextCompat.getDrawable(this,drawableView)
             }
             2 ->{
-                binding.tvOptionTwo.background = ContextCompat.getDrawable(this@QuizQuestionsActivity,drawableView)
+                binding.tvOptionTwo.background = ContextCompat.getDrawable(this,drawableView)
             }
             3 ->{
-                binding.tvOptionThree.background = ContextCompat.getDrawable(this@QuizQuestionsActivity,drawableView)
+                binding.tvOptionThree.background = ContextCompat.getDrawable(this,drawableView)
             }
             4 ->{
-                binding.tvOptionFour.background = ContextCompat.getDrawable(this@QuizQuestionsActivity,drawableView)
+                binding.tvOptionFour.background = ContextCompat.getDrawable(this,drawableView)
             }
         }
     }
@@ -145,6 +145,6 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
         mSelectedOptionPosition = SelectedOptionNumber
         tv.setTextColor(Color.parseColor("#363A43"))
         tv.setTypeface(tv.typeface, Typeface.BOLD)
-        tv.background=ContextCompat.getDrawable(this, com.example.quizapp.R.drawable.selected_option_border_bg)
+        tv.background=ContextCompat.getDrawable(this, com.example.quiz_it.R.drawable.selected_option_border_bg)
     }
 }
