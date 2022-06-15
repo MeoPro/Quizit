@@ -22,18 +22,18 @@
         android:id="@+id/usernamer"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="1dp"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Username" />
@@ -43,11 +43,12 @@
         android:id="@+id/emailr"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/usernamer"
         app:layout_constraintStart_toStartOf="@+id/usernamer"
         app:layout_constraintTop_toBottomOf="@+id/usernamer">
 
@@ -61,12 +62,13 @@
         android:id="@+id/passwordr"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
         app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/emailr"
         app:layout_constraintStart_toStartOf="@+id/emailr"
         app:layout_constraintTop_toBottomOf="@+id/emailr">
 
@@ -80,16 +82,14 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="157dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="158dp"
         android:gravity="center"
         android:text="Register "
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <Button
@@ -99,6 +99,19 @@
         android:layout_marginTop="33dp"
         android:text="Sign up"
         app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordr"
         app:layout_constraintStart_toStartOf="@+id/passwordr"
         app:layout_constraintTop_toBottomOf="@+id/passwordr" />
+
+    <Button
+        android:id="@+id/kelogin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        android:text="Already have an account? Login"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/register"
+        app:layout_constraintStart_toStartOf="@+id/register"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
 </androidx.constraintlayout.widget.ConstraintLayout>

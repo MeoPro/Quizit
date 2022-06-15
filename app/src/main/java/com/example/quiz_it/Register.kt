@@ -4,6 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
+import com.example.quiz_it.UserStorage
+import com.example.quiz_it.objects.UserStorage.create_acc
+import kotlinx.android.synthetic.main.activity_register.*
+import java.util.ArrayList
 
 class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,59 +22,59 @@ class Register : AppCompatActivity() {
         var cekPass = false
 
        usernamer.editText?.addTextChangedListener {
-            var username = namesign.editText?.text.toString()
+            var username = usernamer.editText?.text.toString()
             cekUsername = username != ""
             if (cekEmail && cekPass && cekUsername){
                 register.isClickable = true
-                signupbutton.isEnabled = true
-                signupbutton.alpha = 1f
+                register.isEnabled = true
+                register.alpha = 1f
             }else{
-                signupbutton.isClickable = false
-                signupbutton.isEnabled = false
-                signupbutton.alpha = .5f
+                register.isClickable = false
+                register.isEnabled = false
+                register.alpha = .5f
             }
         }
-        emailsign.editText?.addTextChangedListener {
-            var email = emailsign.editText?.text.toString()
+        emailr.editText?.addTextChangedListener {
+            var email = emailr.editText?.text.toString()
             cekEmail = email != ""
             if (cekEmail && cekPass && cekUsername){
-                signupbutton.isClickable = true
-                signupbutton.isEnabled = true
-                signupbutton.alpha = 1f
+                register.isClickable = true
+                register.isEnabled = true
+                register.alpha = 1f
             }else{
-                signupbutton.isClickable = false
-                signupbutton.isEnabled = false
-                signupbutton.alpha = .5f
+                register.isClickable = false
+                register.isEnabled = false
+                register.alpha = .5f
             }
         }
-        passsign.editText?.addTextChangedListener {
-            var pass = passsign.editText?.text.toString()
+        passwordr.editText?.addTextChangedListener {
+            var pass = passwordr.editText?.text.toString()
             cekPass = pass != ""
             if (cekEmail && cekPass && cekUsername){
-                signupbutton.isClickable = true
-                signupbutton.isEnabled = true
-                signupbutton.alpha = 1f
+                register.isClickable = true
+                register.isEnabled = true
+                register.alpha = 1f
             }else{
-                signupbutton.isClickable = false
-                signupbutton.isEnabled = false
-                signupbutton.alpha = .5f
+                register.isClickable = false
+                register.isEnabled = false
+                register.alpha = .5f
             }
         }
     }
     private fun Login() {
-        loginsign.setOnClickListener {
-            val log = Intent(this@SignupActivity, HomeActivity::class.java)
+        kelogin.setOnClickListener {
+            val log = Intent(this@Register, Login::class.java)
             startActivity(log)
         }
-        signupbutton.setOnClickListener {
-            val logIn = Intent(this@SignupActivity, HomeActivity::class.java )
+        register.setOnClickListener {
+            val logIn = Intent(this@Register, Login::class.java )
             startActivity(logIn)
         }
 
-        signupbutton.setOnClickListener {
-            val name = namesign.editText?.text.toString().trim()
-            val email = emailsign.editText?.text.toString().trim()
-            val password = passsign.editText?.text.toString().trim()
+        register.setOnClickListener {
+            val name = usernamer.editText?.text.toString().trim()
+            val email = emailr.editText?.text.toString().trim()
+            val password = passwordr.editText?.text.toString().trim()
             UserStorage.create_acc(name, email, password)
             finish()
         }
