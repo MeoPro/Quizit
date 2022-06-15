@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_main.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_menu.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_profile.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_quiz.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_register.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_score.xml" value="0.20742753623188406" />
         <entry key="app/src/main/res/layout/activity_category.xml" value="0.32152011152626814" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.23632507324218752" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
