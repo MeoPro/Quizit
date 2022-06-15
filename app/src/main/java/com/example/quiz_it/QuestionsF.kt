@@ -1,6 +1,6 @@
 package com.example.quiz_it
 
-class QuestionsF(
+data class QuestionsF(
     val id: Int,
     val question: String,
     val image: Int,
