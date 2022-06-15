@@ -19,7 +19,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/usernamer"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
@@ -36,29 +36,11 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="Email" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
             android:hint="Username" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout5"
+        android:id="@+id/emailr"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -66,8 +48,27 @@
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+        app:layout_constraintStart_toStartOf="@+id/usernamer"
+        app:layout_constraintTop_toBottomOf="@+id/usernamer">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordr"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintStart_toStartOf="@+id/emailr"
+        app:layout_constraintTop_toBottomOf="@+id/emailr">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -92,12 +93,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/register"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:text="Sign up"
         app:cornerRadius="20dp"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
+        app:layout_constraintStart_toStartOf="@+id/passwordr"
+        app:layout_constraintTop_toBottomOf="@+id/passwordr" />
 </androidx.constraintlayout.widget.ConstraintLayout>
