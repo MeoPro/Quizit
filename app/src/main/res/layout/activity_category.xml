@@ -6,126 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".Category">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/pknn"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PKN"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pkn"
+        app:layout_constraintStart_toStartOf="@+id/pkn"
+        app:layout_constraintTop_toBottomOf="@+id/pkn" />
+
+    <ImageButton
+        android:id="@+id/kategoriQ"
+        android:layout_width="412dp"
+        android:layout_height="134dp"
+        android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quiz_it_removebg_preview"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="500dp">
+    <TextView
+        android:id="@+id/matematikaa"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MATEMATIKA"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/matematika"
+        app:layout_constraintStart_toStartOf="@+id/matematika"
+        app:layout_constraintTop_toBottomOf="@+id/matematika" />
 
-            <ImageView
-                android:id="@+id/ipa"
-                android:layout_width="151dp"
-                android:layout_height="184dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="36dp"
-                android:background="#0037FF"
-                app:circularflow_radiusInDP="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/kategoriQ"
-                tools:srcCompat="@drawable/ipa_removebg_preview" />
+    <TextView
+        android:id="@+id/ipaa"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="IPA"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ipa"
+        app:layout_constraintStart_toStartOf="@+id/ipa"
+        app:layout_constraintTop_toBottomOf="@+id/ipa" />
 
-            <ImageView
-                android:id="@+id/matematika"
-                android:layout_width="151dp"
-                android:layout_height="184dp"
-                android:layout_marginStart="30dp"
-                android:background="#0037FF"
-                app:layout_constraintStart_toEndOf="@+id/ipa"
-                app:layout_constraintTop_toTopOf="@+id/ipa"
-                tools:srcCompat="@drawable/matematik_removebg_preview" />
+    <TextView
+        android:id="@+id/bindoo"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="B.INDO"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bindo"
+        app:layout_constraintStart_toStartOf="@+id/bindo"
+        app:layout_constraintTop_toBottomOf="@+id/bindo" />
 
-            <ImageView
-                android:id="@+id/bindo"
-                android:layout_width="151dp"
-                android:layout_height="184dp"
-                android:layout_marginTop="49dp"
-                android:background="#0037FF"
+    <ImageView
+        android:id="@+id/bindo"
+        android:layout_width="151dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/ipa"
+        app:layout_constraintStart_toStartOf="@+id/ipa"
+        app:layout_constraintTop_toBottomOf="@+id/ipaa"
+        app:srcCompat="@drawable/bindo_removebg_preview" />
 
-                app:layout_constraintEnd_toEndOf="@+id/ipa"
-                app:layout_constraintStart_toStartOf="@+id/ipa"
-                app:layout_constraintTop_toBottomOf="@+id/ipa"
-                tools:srcCompat="@drawable/bindo_removebg_preview" />
+    <ImageView
+        android:id="@+id/pkn"
+        android:layout_width="151dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toTopOf="@+id/bindoo"
+        app:layout_constraintEnd_toEndOf="@+id/matematika"
+        app:layout_constraintStart_toStartOf="@+id/matematika"
+        app:layout_constraintTop_toTopOf="@+id/bindo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pkn_removebg_preview" />
 
-            <ImageButton
-                android:id="@+id/kategoriQ"
-                android:layout_width="412dp"
-                android:layout_height="134dp"
-                android:backgroundTint="#00FFFFFF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/quiz_it_removebg_preview"
-                tools:ignore="SpeakableTextPresentCheck" />
+    <ImageView
+        android:id="@+id/matematika"
+        android:layout_width="151dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/ipaa"
+        app:layout_constraintStart_toEndOf="@+id/ipa"
+        app:layout_constraintTop_toTopOf="@+id/ipa"
+        app:srcCompat="@drawable/matematik_removebg_preview" />
 
-            <ImageView
-                android:id="@+id/pkn"
-                android:layout_width="151dp"
-                android:layout_height="184dp"
-                android:background="#0037FF"
-                app:layout_constraintEnd_toEndOf="@+id/matematika"
-                app:layout_constraintStart_toStartOf="@+id/matematika"
-                app:layout_constraintTop_toTopOf="@+id/bindo"
-                tools:srcCompat="@drawable/pkn_removebg_preview" />
-
-            <TextView
-                android:id="@+id/ipaa"
-                android:layout_width="151dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="IPA"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/ipa"
-                app:layout_constraintStart_toStartOf="@+id/ipa"
-                app:layout_constraintTop_toBottomOf="@+id/ipa" />
-
-            <TextView
-                android:id="@+id/matematikaa"
-                android:layout_width="151dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="MATEMATIKA"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/matematika"
-                app:layout_constraintStart_toStartOf="@+id/matematika"
-                app:layout_constraintTop_toBottomOf="@+id/matematika" />
-
-            <TextView
-                android:id="@+id/bindoo"
-                android:layout_width="151dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="B.INDO"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/bindo"
-                app:layout_constraintStart_toStartOf="@+id/bindo"
-                app:layout_constraintTop_toBottomOf="@+id/bindo" />
-
-            <TextView
-                android:id="@+id/pknn"
-                android:layout_width="151dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="PKN"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/pkn"
-                app:layout_constraintStart_toStartOf="@+id/pkn"
-                app:layout_constraintTop_toBottomOf="@+id/pkn" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    <ImageView
+        android:id="@+id/ipa"
+        android:layout_width="151dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kategoriQ"
+        app:srcCompat="@drawable/ipa_removebg_preview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
