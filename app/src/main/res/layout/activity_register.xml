@@ -22,7 +22,7 @@
         android:id="@+id/usernamer"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="1dp"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
@@ -36,14 +36,15 @@
             android:id="@+id/username"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="Username" />
+            android:hint="Username"
+            android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailr"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
@@ -53,16 +54,18 @@
         app:layout_constraintTop_toBottomOf="@+id/usernamer">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailrr"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:hint="Email"
+            android:inputType="textShortMessage|textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordr"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
@@ -73,22 +76,23 @@
         app:layout_constraintTop_toBottomOf="@+id/emailr">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/paswordrr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="Password"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Register "
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="@+id/imageButton2"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
@@ -96,12 +100,12 @@
         android:id="@+id/register"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="20dp"
         android:text="Sign up"
         app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/passwordr"
-        app:layout_constraintStart_toStartOf="@+id/passwordr"
-        app:layout_constraintTop_toBottomOf="@+id/passwordr" />
+        app:layout_constraintEnd_toEndOf="@+id/cpasswordr"
+        app:layout_constraintStart_toStartOf="@+id/cpasswordr"
+        app:layout_constraintTop_toBottomOf="@+id/cpasswordr" />
 
     <Button
         android:id="@+id/kelogin"
@@ -114,4 +118,25 @@
         app:layout_constraintEnd_toEndOf="@+id/register"
         app:layout_constraintStart_toStartOf="@+id/register"
         app:layout_constraintTop_toBottomOf="@+id/register" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cpasswordr"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordr"
+        app:layout_constraintStart_toStartOf="@+id/passwordr"
+        app:layout_constraintTop_toBottomOf="@+id/passwordr">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/paswordrrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,15 +10,15 @@
         <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_quiz.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_register.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/USER/OneDrive/Documents/GitHub/Quizit/app/src/main/res/layout/activity_score.xml" value="0.20742753623188406" />
-        <entry key="app/src/main/res/layout/activity_category.xml" value="0.32207794189453126" />
+        <entry key="app/src/main/res/layout/activity_category.xml" value="0.27158966064453127" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.23632507324218752" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.22752990722656255" />
         <entry key="app/src/main/res/layout/activity_pengetahuankategori.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_pilihan.xml" value="0.32640838623046886" />
+        <entry key="app/src/main/res/layout/activity_pilihan.xml" value="0.22516326904296885" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.338976166213768" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.22319946289062498" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
       </map>
     </option>
   </component>

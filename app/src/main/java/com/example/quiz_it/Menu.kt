@@ -2,31 +2,33 @@ package com.example.quiz_it
 
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import  androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.view.View
 import com.example.quiz_it.databinding.ActivityMenuBinding
 
 
 
 class Menu : AppCompatActivity() {
-    private lateinit var viewBind:ActivityMenuBinding
+
+    private lateinit var binding: ActivityMenuBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewBind = ActivityMenuBinding.inflate(layoutInflater)
-        setContentView(viewBind.root)
-        supportActionBar?.hide()
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        binding.Registerbutton.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@Menu, Register::class.java)
+            startActivity(intent)
+        }
+        )
+        binding.Loginbutton.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@Menu, Login::class.java)
+            startActivity(intent)
+        }
+        )
+
     }
 
-    private fun listener(){
-        viewBind.Loginbutton.setOnClickListener {
-            val myIntent = Intent(this, Login::class.java)
-            startActivity(myIntent)
-        }
-    }
 }
