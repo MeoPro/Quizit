@@ -22,7 +22,7 @@
   <ImageView
       android:id="@+id/iv_trophy"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_height="365dp"
       android:contentDescription="image"
       android:src="@drawable/ic_trophy" />
 
@@ -54,5 +54,11 @@
       android:textColor="@android:color/black"
       android:textSize="20sp"
       tools:text="Your Score is 9 out of 10" />
+
+  <Button
+      android:id="@+id/button6"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Done" />
 
 </LinearLayout>

@@ -24,5 +24,10 @@ class pengetahuankategori : AppCompatActivity() {
             startActivity(intent)
         }
         )
+        binding.imageView3.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@pengetahuankategori, Binatang::class.java)
+            startActivity(intent)
+        }
+        )
     }
 }

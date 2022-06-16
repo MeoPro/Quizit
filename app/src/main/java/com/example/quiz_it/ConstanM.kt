@@ -71,7 +71,7 @@ object ConstanM {
             "0",
             "5",
             "8",
-            5
+            4
         )
 
         questionsList.add(que7)
@@ -96,7 +96,7 @@ object ConstanM {
 
         questionsList.add(que9)
 
-        val que10= QuestionM(10,"Apakah yang lebih berat antara kapas 10 kg atau besi 5 kg?",
+        val que10= QuestionM(10,"Apakah yang lebih berat antara kapas 10 kg atau besi 10 kg?",
             "Kepas",
             "Beso",
             "Hidupku",

@@ -114,6 +114,8 @@ class  Pkn: AppCompatActivity(), View.OnClickListener{
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmitp.text = "FINISH"
+                    }else{
+                        binding.btnSubmitp.text = "GO TO NEXT QUESTION"
                     }
                     mSelectedOptionPosition = 0
                 }

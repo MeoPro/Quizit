@@ -14,7 +14,7 @@ import androidx.core.content.ContextCompat
 import com.example.quiz_it.databinding.ActivityBenderaBinding
 
 
-class  Bendera: AppCompatActivity(), View.OnClickListener{
+class Bendera : AppCompatActivity(), View.OnClickListener{
     private var mCurrentPosition: Int = 1
     private var mQuestionsList: ArrayList<QuestionsF>? = null
     private var mSelectedOptionPosition : Int = 0
@@ -46,7 +46,6 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
 
         if (mCurrentPosition == mQuestionsList!!.size){
             binding.btnSubmit.text = "FINISH"
-
         }else{
             binding.btnSubmit.text = "SUBMIT"
         }
@@ -92,13 +91,12 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
             }
             binding.btnSubmit.id ->{
                 if (mSelectedOptionPosition == 0){
-
+                    mCurrentPosition ++
 
                     when{
                         mCurrentPosition <= mQuestionsList!!.size ->{
                             setQuestion()
                         }else->{
-
                         val intent = Intent(this, ResultFlag::class.java)
                         intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
                         intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
@@ -116,30 +114,28 @@ class  Bendera: AppCompatActivity(), View.OnClickListener{
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmit.text = "FINISH"
-
-                    }else {
+                    }else{
                         binding.btnSubmit.text = "GO TO NEXT QUESTION"
                     }
                     mSelectedOptionPosition = 0
                 }
             }
-
         }
     }
 
     private fun AnswerView(answer: Int, drawableView: Int){
         when(answer){
             1 ->{
-                binding.tvOptionOne.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionOne.background = ContextCompat.getDrawable(this@Bendera,drawableView)
             }
             2 ->{
-                binding.tvOptionTwo.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionTwo.background = ContextCompat.getDrawable(this@Bendera,drawableView)
             }
             3 ->{
-                binding.tvOptionThree.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionThree.background = ContextCompat.getDrawable(this@Bendera,drawableView)
             }
             4 ->{
-                binding.tvOptionFour.background = ContextCompat.getDrawable(this,drawableView)
+                binding.tvOptionFour.background = ContextCompat.getDrawable(this@Bendera,drawableView)
             }
         }
     }

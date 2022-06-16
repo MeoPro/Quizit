@@ -53,6 +53,13 @@
         android:layout_marginTop="10dp"
         android:textColor="@android:color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         tools:text="Your Score is 9 out of 10" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done" />
 
 </LinearLayout>

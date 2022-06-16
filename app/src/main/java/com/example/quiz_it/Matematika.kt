@@ -114,6 +114,8 @@ class  Matematika: AppCompatActivity(), View.OnClickListener{
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmitm.text = "FINISH"
+                    }else{
+                        binding.btnSubmitm.text = "GO TO NEXT QUESTION"
                     }
                     mSelectedOptionPosition = 0
                 }

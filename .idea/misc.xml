@@ -22,16 +22,16 @@
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.22752990722656255" />
         <entry key="app/src/main/res/layout/activity_pengetahuankategori.xml" value="0.21149661299111186" />
         <entry key="app/src/main/res/layout/activity_pilihan.xml" value="0.22516326904296885" />
-        <entry key="app/src/main/res/layout/activity_pkn.xml" value="0.115625" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pkn.xml" value="0.3816787719726563" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2599203800809556" />
+        <entry key="app/src/main/res/layout/activity_quiz.xml" value="0.25181732177734373" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2013961791992187" />
         <entry key="app/src/main/res/layout/activity_result_bi.xml" value="0.115625" />
         <entry key="app/src/main/res/layout/activity_result_binatang.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_result_flag.xml" value="0.24449527021767437" />
-        <entry key="app/src/main/res/layout/activity_result_i.xml" value="0.115625" />
-        <entry key="app/src/main/res/layout/activity_result_m.xml" value="0.115625" />
-        <entry key="app/src/main/res/layout/activity_result_p.xml" value="0.10902862548828124" />
+        <entry key="app/src/main/res/layout/activity_result_i.xml" value="0.3509124755859375" />
+        <entry key="app/src/main/res/layout/activity_result_m.xml" value="0.1024322509765625" />
+        <entry key="app/src/main/res/layout/activity_result_p.xml" value="0.2189682006835937" />
         <entry key="app/src/main/res/layout/activity_score.xml" value="0.115625" />
       </map>
     </option>

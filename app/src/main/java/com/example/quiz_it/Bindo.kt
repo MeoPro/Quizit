@@ -114,6 +114,8 @@ class  Bindo: AppCompatActivity(), View.OnClickListener{
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmitbi.text = "FINISH"
+                    }else{
+                        binding.btnSubmitbi.text = "GO TO NEXT QUESTION"
                     }
                     mSelectedOptionPosition = 0
                 }

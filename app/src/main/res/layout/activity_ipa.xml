@@ -21,10 +21,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:textColor="#363A43"
-            android:textSize="22sp"
-            android:text="Ini Merupakan Foto Bendera Dari Negara Apa?">
-        </TextView>
+            android:text="Ini Merupakan Foto Bendera Dari Negara Apa?"
+            android:textColor="#000000"
+            android:textSize="22sp"></TextView>
 
         <LinearLayout
             android:id="@+id/ll_progress_detailsi"

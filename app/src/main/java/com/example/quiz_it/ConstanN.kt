@@ -81,7 +81,7 @@ object ConstanN {
             "1 hari",
             "10 detik",
             "3 detik",
-            2
+            4
         )
 
         questionsList.add(que8)

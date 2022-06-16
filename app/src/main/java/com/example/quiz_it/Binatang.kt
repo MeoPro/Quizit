@@ -115,6 +115,9 @@ class  Binatang: AppCompatActivity(), View.OnClickListener{
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmitn.text = "FINISH"
                     }
+                else{
+                    binding.btnSubmitn.text = "GO TO NEXT QUESTION"
+                }
                     mSelectedOptionPosition = 0
                 }
             }

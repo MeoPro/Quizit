@@ -17,16 +17,16 @@ class Pilihan : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        binding.imageView2.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this@Pilihan, Profile::class.java)
-            startActivity(intent)
-        }
-        )
-        binding.textView4.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this@Pilihan, Profile::class.java)
-            startActivity(intent)
-        }
-        )
+//        binding.imageView2.setOnClickListener(View.OnClickListener {
+//            val intent = Intent(this@Pilihan, Profile::class.java)
+//            startActivity(intent)
+//        }
+//        )
+//        binding.textView4.setOnClickListener(View.OnClickListener {
+//            val intent = Intent(this@Pilihan, Profile::class.java)
+//            startActivity(intent)
+//        }
+//        )
         binding.sekolah.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@Pilihan, Category::class.java)
             startActivity(intent)

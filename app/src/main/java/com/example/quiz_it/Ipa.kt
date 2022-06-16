@@ -114,7 +114,9 @@ class  Ipa: AppCompatActivity(), View.OnClickListener{
 
                     if(mCurrentPosition == mQuestionsList!!.size){
                         binding.btnSubmiti.text = "FINISH"
-                    }
+                    }else{
+                    binding.btnSubmiti.text = "GO TO NEXT QUESTION"
+                }
                     mSelectedOptionPosition = 0
                 }
             }
